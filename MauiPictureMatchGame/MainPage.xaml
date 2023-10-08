@@ -8,32 +8,70 @@
             Spacing="25"
             Padding="30,0"
             VerticalOptions="Center">
-
-            <Image
-                Source="dotnet_bot.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="200"
-                HorizontalOptions="Center" />
-
             <Label
-                Text="Hello, World!"
+                Text="Doge Matching Game"
                 SemanticProperties.HeadingLevel="Level1"
                 FontSize="32"
                 HorizontalOptions="Center" />
 
             <Label
-                Text="Welcome to .NET Multi-platform App UI"
+                Text="Click the cards and match the doge"
                 SemanticProperties.HeadingLevel="Level2"
                 SemanticProperties.Description="Welcome to dot net Multi platform App U I"
                 FontSize="18"
                 HorizontalOptions="Center" />
 
-            <Button
-                x:Name="CounterBtn"
-                Text="Click me"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Center" />
+            <Grid
+                RowDefinitions="100, 100"
+                ColumnDefinitions="100, 100, 100"
+                Padding="5"
+                HorizontalOptions="Center">
+                <ImageButton
+                    x:Name="Card0"
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Source="dotnet_bot.jpg"
+                    Clicked="Card0_Clicked"
+                    />
+                <ImageButton
+                    x:Name="Card1"
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    Source="dotnet_bot.jpg"
+                    Clicked="Card1_Clicked"
+                    />
+                <ImageButton
+                    x:Name="Card2"
+                    Grid.Row="0"
+                    Grid.Column="2"
+                    Source="dotnet_bot.jpg"
+                    Clicked="Card2_Clicked"
+                    />
+                <ImageButton
+                    x:Name="Card3"
+    Grid.Row="1"
+    Grid.Column="0"
+    Source="dotnet_bot.jpg"
+                    Clicked="Card3_Clicked"
+    />
+                <ImageButton
+                    x:Name="Card4"
+    Grid.Row="1"
+    Grid.Column="1"
+    Source="dotnet_bot.jpg"
+                    Clicked="Card4_Clicked"
+                    
+    />
+                <ImageButton
+                    x:Name="Card5"
+    Grid.Row="1"
+    Grid.Column="2"
+    Source="dotnet_bot.jpg"
+                    Clicked="Card5_Clicked"
+    />
+
+
+            </Grid>
 
         </VerticalStackLayout>
     </ScrollView>
